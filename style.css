@@ -105,7 +105,11 @@ html {
 
     text-align: center;
   }
-  .cont1 {font-size:  14px;
+  .cont1 {font-size:  18px;
           text-align: center;
+          weight: 100px;
          }
-  .cont1 li{list-style-type: none; }
+  .cont1 li{list-style-type: none;
+     }
+    .cont1 ul{
+      text-align: center; }
