@@ -1,14 +1,16 @@
+* {
+    box-sizing: border-box;
+}
 .bodycontainer {
     width:1440px;
 }
 .navigation { 
-    
-    border: 1px solid black;}
+    border: 1px solid greenyellow;}
 .header {
-    width:100%;
-    display:flex;
+    width:1440px;
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
     border: 1px solid rgb(37, 2, 43);
     background-color: black;
     width:100%;
@@ -18,6 +20,7 @@
     letter-spacing: 0.02em;
    /* text-align: left;*/
 }
+.header h1{margin-left:2%;}
 .nav-list {
     width:584px;
     height: 50px;
@@ -27,13 +30,14 @@
     background-color: black;
     margin-left: 0px;
 }
-.navig3 {
+.navig3 a{
     color:white;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     list-style-type:none;
 }
+.navig3 a{text-decoration: none;}
 .header h1{
     width: 294px;
     height:50px;
@@ -46,5 +50,96 @@
     font-weight: 400;
 }
 .icon_profile {
-
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+.welcome{
+    width: 1440px;
+   height: 600px;;
+}
+.welcome-gradient{
+        margin-top: 90px;
+        margin-left:7px;
+        height: 300px;
+        width: 1440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%);
+    }
+.welcome_to {
+    margin-left:20px;
+    margin-top: 90px;
+  position: absolute;
+    width: 600px;
+    height:220px;
+    font-family: Forum;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    color:white;
+    background-color: black;
+}
+.welcome_to p {
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    transform: translate(0, -10%) }
+.about a {
+    list-style-type:none;
+    text-decoration: none;
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 40px;
+    color:black;
+    top:5;
+    text-align: center;
+}
+.about h2{text-align: center;
+     }
+.about:after{content: ________;
+             color:black;} 
+             .hr-line {
+                margin: 30px 680px;
+                padding: 20px;
+                height: 0;
+                border: none;
+                border-top: 2px solid #333;
+            }
+.about_p{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+}
+.image-wrap{
+    width:1440px;
+    display:flex;
+    justify-content:space-between;
+}
+.image-items{
+}
+.carusel_pagination {
+    padding-top: 20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.active_pag {width: 26px;
+    height: 26px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.active_pag a{margin: 0 5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color:black;
+    border-radius: 50%;
 }
