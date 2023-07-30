@@ -11,19 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&;900&display=swap" rel="stylesheet">
 <body class="bodycontainer">
-    <header class="header">
-        <h1>Brooklin public library</h1>
-        <main>
+    <header >
+        <div class="header_wrapper">
+        <h1 class="title_Brooklin">Brooklin public library</h1>
+
         <nav class="navigaton">
           <ul class="nav-list">
-                <li class="navig3"><a href="#">About</a></li>
-                <li class="navig3"><a href="#">Favorites</a></li>
-                <li class="navig3"><a href="#">Coffee shop</a></li>
-                <li class="navig3"><a href="#">Contacts</a></li>
-                <li class="navig3"><a href="#">Library Card</a></li>
+                <li class="navig3"><a href="#about">About</a></li>
+                <li class="navig3"><a href="#favorites">Favorites</a></li>
+                <li class="navig3"><a href="#coffeeshop">Coffee shop</a></li>
+                <li class="navig3"><a href="#contacts">Contacts</a></li>
+                <li class="navig3"><a href="#librarycard">Library Card</a></li>
             </ul>
         </nav>
-        <div class="icon_profile"><a href="#"><img src="assets/Subtract.png" alt="icon_profile"></a></div>
+        <button class="icon_profile" type="submit">
+            <img src="./assets/Subtract.png" alt="button-login" width="28" height="28">
+        </button>
+    </div>
     </header>
 
 <section class="welcome">
@@ -32,7 +36,7 @@
     <p class="welcome_to">WELCOME <br>TO THE BROOKLYN <br>LIBRARY</p></div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
    <h2 class="container_h2"><a href="#">About</a></h2>
    <hr class="hr-line">
    <p class="about_p">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
@@ -49,7 +53,7 @@
 </section>
 
 
-<section class="favorites">
+<section class="favorites" id="favorites">
     <h2 class="container_h2"><a href="#">Favorites</a></h2>
    <hr class="hr-line">
         <p>Pick favorites of season</p>
@@ -162,7 +166,7 @@
    </div>
     </div><!--от favorites_season_book-->
 </section>
-<section class="CoffeeShop">
+<section class="CoffeeShop" id="coffeeshop">
     <h2 class="container_h2"><a href="#">Coffee Shop</a></h2>
    <hr class="hr-line">
    <p class="about_p" id="coffeeshop_p">
@@ -256,7 +260,7 @@ you can get a favorite book and read in coffee shop. Our barista to cook you bes
     </div>
 
    </div><!--menu-->
-   <section class="contacts">
+   <section class="contacts" id="contacts">
     <h2 class="container_h2"><a href="#">Our Contacts</a></h2>
     <hr class="hr-line">
      <div class="contacts_container">
@@ -275,7 +279,7 @@ you can get a favorite book and read in coffee shop. Our barista to cook you bes
 </section>
 
 
-<section class="digital_cards">
+<section class="digital_cards" id="librarycard">
     <h2 class="container_h2"><a href="#">Digital Library Cards</a></h2>
     <hr class="hr-line">
     <div class="digital_cards_form_wrapper"><!--обложка формы-->
@@ -340,7 +344,7 @@ you can get a favorite book and read in coffee shop. Our barista to cook you bes
       <div class="footer_rsschool">
         <p class="">2023</p>
         <a class="footer_link" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
-        <a class="footer_link" href="https://github.com/nastena-liz">nastena-liz</a>
+        <a class="footer_link" href="https://github.com/AnnaBush21">AnnaBush21</a>
       </div>
 </footer>
 </html>
