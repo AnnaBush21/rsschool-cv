@@ -3,13 +3,14 @@
 }
 .bodycontainer {
     width:1440px;
+    margin:auto;
 }
 .navigation { 
     border: 1px solid greenyellow;}
 .header_wrapper {
     width:1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
     border: 1px solid rgb(37, 2, 43);
     background-color: black;
     margin: auto;
@@ -25,13 +26,16 @@
     letter-spacing: 1px;
     line-height: 50px;
     margin-left: 20px;
-    margin-top: 20px;}
+    margin-top: 20px;
+    margin-right: 340px;
+    }
 .nav-list {
     width:584px;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-self: flex-end;
     background-color: black;
     margin-left: 0px;
 
@@ -45,25 +49,23 @@
     text-decoration: none;
 }
 .icon_profile {
-   /*  display: flex;
-    justify-content:center;
-    margin-top: 20px;*/
+   
+
     background-color: black;
     border: none;
-    margin-right: 120px;}
-
+    margin-right: 120px;
+    margin-left: 40px;}
 .welcome{
-     width: 1440px;
-     height: 600px;;
+    width:100%;
+  position: relative;
 }
 .welcome-gradient{
-        margin-top: 90px;
-        margin-left:7px;
+        width:100%;
         height: 300px;
-        width: 1440px;
         position: absolute;
-        top: 0;
-        left: 0;
+        top:0;
+        left:0;
+        right: 0;
         background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%);
     }
 .welcome_to {
@@ -120,6 +122,9 @@
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+}
+.container_h2 a:hover{
+    color:#BB945F;
 }
 .image-wrap{
     width:1440px;
@@ -295,6 +300,10 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
+.favorites_book_button1:hover {
+    background-color:gray;
+    
+}
 .favorites_book_button1{
     width: 75px;
     height: 30px;
@@ -313,6 +322,9 @@
     margin-top: auto;
     cursor: pointer;
 }
+.favorites_book_button1_own:disabled{
+    background-color:rgb(184, 180, 180)
+}
 .favorites_book_button_own {
     width: auto;
     height: auto;
@@ -320,6 +332,9 @@
     margin-left: 10px;
     margin-top: auto;
     margin-bottom: 10px;
+}
+.spring{
+    display:none;
 }
 .favorites_season_books {
     display: flex;
@@ -564,6 +579,10 @@
     margin-bottom: 20px;
     transition: 1s;
 }
+.check:hover{
+    background-color: rgb(112, 109, 109);
+    transition: 3s;
+}
 .LibraryCard_login{
 margin-right: 20px;
 margin-top: -20px;
@@ -617,6 +636,14 @@ margin-top: -20px;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+#card:hover{
+    background-color:rgb(174, 171, 171);
+    transition: 2s;
+}
+#library_sign_card:hover{
+    background-color:rgb(174, 171, 171);
+    transition: 2s;
+}
 .footer {
     max-width: 1440px;
     height: 250px;
@@ -624,15 +651,18 @@ margin-top: -20px;
     color: #ffffff;
     margin: auto;
 }
-.addres{
-    width: 229px;
+.addres {
+    width: 231px;
+    margin-bottom: 10px;
+}
+.addres a{
+    text-decoration: none;
     color: #FFF;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    margin-bottom: 10px;
 }
 .workmode{
     width: 229px;
@@ -667,6 +697,9 @@ margin-top: -20px;
     justify-content: center;
     align-items: flex-start;
     gap: 15px;
+}
+.social li{
+    list-style-type: none;
 }
 .footer_cont2 {
     display: flex;
