@@ -10,7 +10,7 @@
 .header_wrapper {
     width:1440px;
     display: flex;
-    justify-content:end;
+    justify-content:end; 
     border: 1px solid rgb(37, 2, 43);
     background-color: black;
     margin: auto;
@@ -25,39 +25,45 @@
     color: white;
     letter-spacing: 1px;
     line-height: 50px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
     margin-right: 340px;
     }
 .nav-list {
-    width:584px;
     height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+   display: flex;
     align-self: flex-end;
     background-color: black;
-    margin-left: 0px;
+    margin-left: 40px;
 
+
+}
+.navig3{
+    margin-left: 30px;
 }
 .navig3 a{
     color:white;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
+    letter-spacing: 0cm;
     list-style-type:none;
     text-decoration: none;
 }
-.icon_profile {
-   
+.navig3 a:hover{
+    font-weight: bold;
+}
 
+.icon_profile {
     background-color: black;
     border: none;
-    margin-right: 120px;
-    margin-left: 40px;}
+    margin-right:12px;
+    border:1 p solid white;
+    margin-left: 40px;
+    }
 .welcome{
     width:100%;
-  position: relative;
+    position: relative;
 }
 .welcome-gradient{
         width:100%;
@@ -69,8 +75,8 @@
         background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%);
     }
 .welcome_to {
-    margin-left:20px;
-    margin-top: 90px;
+    margin-left:0px;
+    margin-top: 255px;
     position: absolute;
     width: 600px;
     height:220px;
@@ -90,8 +96,8 @@
     transform: translate(0, -10%) }
 .about{
     width: 100%;
-    height: 837px;
-    top: 690px;
+    height: 830px;
+    top: 680px;
 }
 .container_h2 a {
     list-style-type:none;
@@ -100,28 +106,34 @@
     font-weight: 400;
     font-size: 40px;
     color:black;
-    top:5;
+    top:0;
     text-align: center;
 }
 .container_h2{
+    margin-top:15px;
     text-align: center;
+    margin-bottom:10px;
      }
-.about:after{content: ________;
+.about{
+    margin-bottom: -10px;
+}
+.about:after{content: _;
              color:black;}
 .hr-line {
-                margin: 30px 680px;
-                padding: 20px;
                 height: 0;
                 border: none;
-                border-top: 2px solid #333;
+                border-top: 1px solid #333;
+                margin-bottom: 20px;;
             }
 .about_p{
+    margin-top:-20px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom:20px;
 }
 .container_h2 a:hover{
     color:#BB945F;
@@ -130,14 +142,22 @@
     width:1440px;
     display:flex;
     justify-content:space-between;
+    top:0;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-bottom: 25px;;
 }
 .image-items{
+    margin-left: 20px;
 }
 .carusel_pagination {
-    padding-top: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
     display:flex;
     justify-content:center;
     align-items: center;
+    margin-bottom: -20px;
+    border:1px solid black;
 }
 .active_pag {
     width: 26px;
@@ -145,9 +165,11 @@
     display:flex;
     justify-content:center;
     align-items: center;
+    margin-bottom: -5px;
+    border:1px solid black;
 }
 .active_pag a{
-    margin: 0 5px;
+    margin: 0 0px;
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -161,6 +183,10 @@
     width:100%;
     height: 1439px;
     top:1527px}
+.pick{margin-top: -20px;
+      margin-bottom: 40px;
+
+    }
 .container_h2 a {
     list-style-type:none;
     text-decoration: none;
@@ -168,7 +194,7 @@
     font-weight: 400;
     font-size: 40px;
     color:black;
-    top:5;
+    top:0;
     text-align: center;
 }
 .favorites h2{text-align: center;
@@ -176,7 +202,7 @@
 .favorites:after{content: ________;
              color:black;}
 .hr-line {
-            margin: 30px 680px;
+            margin: 20px 680px;
             padding: 20px;
             height: 0;
             border: none;
@@ -199,6 +225,7 @@
     left: 20px;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
 }
 .seasons-label {
     font-family: Inter;
@@ -230,6 +257,8 @@
      background: #FFF;
      display: flex;
      flex-direction: column;
+     margin-right: 55px;
+     margin-bottom: 0px;
 
 }
 .favorites_container:nth-last-child(2n+1){
@@ -285,6 +314,7 @@
     margin-left: 20px;
     max-width: 350px;
     }
+
 .book{
     position: absolute;
     top: 48px;
@@ -352,7 +382,11 @@
     row-gap: 37px;
     display: none;
 }
+.favorites{
+    margin-bottom: 78px;
+}
 .Coffeeshop {
+    margin-top:60px;
     display: flex;
     width: 1440px;
     height: 841px;
@@ -361,15 +395,28 @@
 }
 #coffeeshop_p{
     text-align: center;
+    
+}
+#coffeeshop a{
+    letter-spacing: 0.05em;
+}
+#coffeeshop{
+    text-align:center;
+}
+#coffeeshop_p{
+    letter-spacing: 0.1em;
 }
 .menu {
     display: flex;
     width: 1400px;
     height: 500px;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+}
+.menu_title{
+    margin-left: 30px;
 }
 .coffee_tea {
     height: 500px;
@@ -377,13 +424,25 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
-
 }
 .desserts_cakes {
-    height: 500px;
     justify-content: space-between;
     display: flex;
-    text-align: justify;
+    text-align:left;
+    margin-bottom: 0px;
+}
+.menu_tea{
+    text-align: start;
+      left:0;
+      margin-left: -15px;
+      margin-top: 5px;
+}
+.menu_cake{
+    margin-right: 5px;
+    text-align: end;
+}
+.menu_container{
+
 }
 .menu_title{
     color: #BB945F;
@@ -394,8 +453,8 @@
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    margin-top: 23px;
-    margin-bottom: 15px;
+    margin-top: 18px;
+    margin-bottom: 20px;
 }
 .menu_items {
     color: #000;
@@ -407,6 +466,19 @@
     column-gap: 60px;
     margin-top: 6px;
     padding-bottom: 10px;
+    margin-right: 20px;
+}
+.menu_items1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: capitalize;
+    display: flex;
+    column-gap: 80px;
+    margin-top: 6px;
+    padding-bottom: 10px;
+    margin-right: 20px;
 }
 .menu_line {
     width: 100px;
@@ -415,6 +487,7 @@
     align-self: center;
 
 }
+
 .menu_name {
     color: #000;
     font-family: Inter;
@@ -424,19 +497,42 @@
     text-transform: capitalize;
     white-space: nowrap;
     max-width: 196px;
-    margin-right: auto;
+    margin-left:30px;
+    text-align: justify;
+}
+.menu_name1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    max-width: 196px;
+    margin-left:0px;
     text-align: justify;
 }
 .menu_dollar {
-    margin-left: auto;
+    margin-left: -20px;
+}
+.contacts{
+    margin-top:0px;
+}
+
+.contacts{
+    margin-top:0px;
 }
 .contacts_container {
-    height: 1150px;
+    border:1 px solid;
     color: rgb(0, 0, 0);
     max-width: 1440px;
-    max-height: 440px;
+
     display: flex;
-    flex-wrap: nowrap;}
+    flex-wrap: nowrap;
+    margin-left:0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
 .info_text{
     font-family: Inter;
     font-size: 20px;
@@ -444,8 +540,10 @@
     line-height: 40px;
     letter-spacing: 2px;
     text-align: left;
+    margin-top: -20px;
     }
 .info_number{
+    margin-top: 30px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -454,38 +552,50 @@
     text-align: left;
 }
 .contacts_map{
-    margin-top: 10px;
+    margin-top: -15px;
     margin-left: 200px;
 }
 .library_card {
     max-width: 1440px;
     height: 614px;
     display: inline;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.digital_cards a{
+    letter-spacing: 0.05em;
+}
+.digital_cards h2{
+    letter-spacing: 0.05em;
 }
 .digital_cards{
     max-width: 1440px;
     height: 614px;
     display: inline;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .digital_cards_form_wrapper{
     display: flex;
     width: 1440px;
     height: 500px;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+.librarycard{
+    margin-bottom: 0px;
 }
 .card_form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: max-content;
-    margin-top: 10px;
-    margin-left: 20px;}
+    margin-top: -25px;
+    margin-left: 20px;
+}
 .form_border{
     width: 600px;
     height: 386px;
+
     border: 2px solid  #BB945F;
     display: flex;
     flex-direction: column;
@@ -501,7 +611,8 @@
     letter-spacing: 0.6px;
     display: grid;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 .field_find_body{
     display: flex;
@@ -525,7 +636,7 @@
     text-align: left;
     align-self: flex-start;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .input_size {
     width: 520px;
@@ -649,7 +760,7 @@ margin-top: -20px;
     height: 250px;
     background-color: #000000;
     color: #ffffff;
-    margin: auto;
+    margin-top: 0px;
 }
 .addres {
     width: 231px;
@@ -672,14 +783,14 @@ margin-top: -20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    margin-bottom: 10px;
+   
     text-align: right;
 }
 .footer_cont{
     display: flex;
     width: 1440px;
     flex-direction: column;
-    margin: auto;
+    margin-top: 0px;
     background: #000000;
     color: #ffffff;
 }
@@ -688,8 +799,8 @@ margin-top: -20px;
     width: 1400px;
     height: 40px;
     justify-content: space-between;
-    margin: auto;
-    margin-bottom: 10px;}
+   
+   }
 .social{
     display: flex;
     width: 102px;
@@ -697,6 +808,7 @@ margin-top: -20px;
     justify-content: center;
     align-items: flex-start;
     gap: 15px;
+   
 }
 .social li{
     list-style-type: none;
@@ -705,7 +817,8 @@ margin-top: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 20px 0px 20px;
+  
+  
 }
 .footer_rss{
     display: flex;
@@ -713,7 +826,6 @@ margin-top: -20px;
     width: 1440px;
     background-color: #000000;
     color: #ffffff;
-    margin: auto;
     padding-top: 30px;
 
 }
@@ -732,7 +844,7 @@ margin-top: -20px;
 }
 .line_footer {
     max-width: 1400px;
-    margin: auto;
+    margin-top: 20px;
     color: #ffffff;
     height: 1px;
 }
