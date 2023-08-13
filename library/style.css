@@ -171,8 +171,6 @@
     width:100%;
     margin-bottom: -10px;
 }
-.container{
-}
 .about:after{content: _;
              color:black;}
 .hr-line {
@@ -499,9 +497,6 @@
 .menu_cake{
     margin-right: 5px;
     text-align: end;
-}
-.menu_container{
-
 }
 .menu_title{
     color: #BB945F;
