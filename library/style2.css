@@ -1,0 +1,266 @@
+@media (max-width: 1024px) {
+    .bodycontainer {
+      width:100%;
+    }
+    .body_wrapper{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+    .header_wrapper {
+        justify-content:space-between;
+    }
+
+
+    .nav_menu{
+        position: fixed;
+        padding: 0 0px;
+        right: 0;
+        top:90px;
+        width: 60%;
+        max-width: 200px;
+        z-index: 1000;
+        background-color: black;
+    }
+    .nav_menu--visible{
+        transform: none;
+    }
+    .nav-list{
+        margin: 0 ;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .navig3{
+        top:10px;
+        margin-right: 0;
+        margin-bottom: 0px;
+        width: 100%;
+        background-color:gray;
+       text-align: center;
+    }
+    .navig3 a{
+    }
+
+    .navig_a{
+        padding: 0 30px;
+        width: 100%;
+    }
+
+
+
+
+
+
+    .title_Brooklin {
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .button-wrapper{
+     justify-content:end ;
+    }
+    .icon-profile{
+        background-color: black;
+        border: none;
+        margin-right:10px;
+        margin-left: 30px;
+        margin-top:20px;
+        }
+
+     /*Бургер-меню*/
+
+    .header_burger_btn{
+        display: block;
+    } .burger-button{
+        background-color: white;
+        border: none;
+        margin-right:20px;
+        margin-left: 40px;
+        margin-top:20px;
+        border: none;
+    }
+    /*Конец Бургер*/
+.welcome_to{
+    margin-top: 120px;
+}
+.welcome img{
+    width:100%;
+}
+.welcome1440{display: none;}
+.welcome768{
+    display:block;
+}
+.container{
+}
+.about:after{content: _;
+    color:black;}
+.hr-line {
+       margin:0 470;
+   }
+.image-wrap{
+    justify-content: center;
+}
+   .image-items3{
+    display: none;
+   }
+}
+@media (max-width: 768px) {
+.bodycontainer {
+    width:768px;
+      }
+      .body_wrapper{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+      .button-wrapper{
+        justify-content:end ;
+      }
+      .icon-profile{
+        background-color: black;
+        border: none;
+        margin-right:10px;
+        margin-left: 80px;
+        margin-top:20px;
+        }
+
+
+      .burger-button{
+        display: none;
+      }
+
+      /* Бургер
+
+      .nav_menu{           
+        position:absolute;
+        display: block;
+        right:-350px;
+        top:10px;
+        width: 350px;
+        height: 500px;
+        border: 1px solid red;
+        visibility: hidden;
+
+    }
+    .nav-list{
+        position:absolute;
+        border: 3px solid greenyellow;
+        margin-left: 170px;
+        display: block;
+       
+       
+    }
+
+    .navig3:not(:last-child) {
+        list-style-type:none;
+        margin-right: 0;
+       
+    }
+    .navig3:hover{ z-index: 99999;}
+
+    .navig_a{
+        background-color: black;
+        display: block;
+        padding:20px;
+       
+    
+        text-decoration: none;
+    }
+    .header-burger_btn{
+        position: relative;
+    
+        width:45px;
+        width: 45px;
+        background-color: aquamarine;
+        border: none;
+        outline: none;
+    }
+    .header-burger_btn span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        height:3px;
+        left: 5px;
+        background-color:black;
+        transition: background-color .3s, opacity .25s, transform 3s;
+        will-change: transform;
+    }
+    .header-burger_btn span:nth-child(1)
+    {
+        transform: translateY(-10px);
+    }
+    .header-burger_btn span:nth-child(2)
+    {
+    }
+    .header-burger_btn span:nth-child(3){
+        transform: translateY(10px);
+    }
+
+   
+.header.open .header-burger_btn span:nth-child(1)
+{
+    transform: translateY(0) rotate(45deg);
+}
+.header.open .header-burger_btn span:nth-child(2)
+{opacity: 0;
+}
+.header.open .header-burger_btn span:nth-child(3){
+    transform: translateY(0px) rotate(-45deg);
+}
+
+
+.header.open .nav_menu{
+    transform: translateX(-100%);
+    visibility: visible;
+}
+.header-burger_btn span:hover{
+
+}
+   */
+
+   /*  end burger */ 
+.welcome{
+}
+.welcome img{
+    width:100%;
+    z-index: 2;
+    }
+.welcome_to{
+    margin-top: 100px;
+    z-index: 3;
+}
+.about:after{content: _;
+    color:black;}
+
+.hr-line {
+    margin:0 350;
+}
+.image-wrap{
+    justify-content: center;
+}
+.image-items2,.image-items3{
+    display: none;
+   }
+.active_pag1 {
+    width: 26px;
+    height: 26px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: -5px;
+    border:1px solid black;
+}
+.active_pag1 a{
+    margin: 0 0px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color:black;
+    border-radius: 50%;
+}
+.active_pag1 a:hover{
+    background-color:#BB945F;
+}
+}
+
