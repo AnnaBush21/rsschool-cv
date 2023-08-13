@@ -1,55 +1,72 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="bodycontainer">
-
-    <header >
+ <div class="body_wrapper">
+    <header  class="header open">
         <div class="header_wrapper">
         <h1 class="title_Brooklin">Brooklin public library</h1>
 
-        <nav class="navigaton">
+        <nav class="nav_menu" data-nav_menu>
           <ul class="nav-list">
-                <li class="navig3"><a href="#about">About</a></li>
-                <li class="navig3"><a href="#favorites">Favorites</a></li>
-                <li class="navig3"><a href="#coffeeshop">Coffee shop</a></li>
-                <li class="navig3"><a href="#contacts">Contacts</a></li>
-                <li class="navig3"><a href="#librarycard">Library Card</a></li>
+                <li class="navig3"><a class="navig_a" href="#about">About</a></li>
+                <li class="navig3"><a class="navig_a" href="#favorites">Favorites</a></li>
+                <li class="navig3"><a class="navig_a" href="#coffeeshop">Coffee shop</a></li>
+                <li class="navig3"><a class="navig_a" href="#contacts">Contacts</a></li>
+                <li class="navig3"><a class="navig_a" href="#librarycard">Library Card</a></li>
             </ul>
         </nav>
+        <div class="button-wrapper">
         <button class="icon_profile" type="submit">
             <img src="assets/icon_profile.svg" alt="button-login" width="28" height="28">
         </button>
+        <button class="burger-button" type="submit">
+            <img src="assets/burger.svg" alt="button-burger" width="45" height="20">
+        </button>
     </div>
+    <button class="header_burger_btn" data-header_burger_btn aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger_line"></span>
+    </button>
+
     </header>
     <main>
+
 <section class="welcome">
-    <img src="assets/welcome.png" alt="welcome">
+    <img class="welcome1440"src="assets/welcome.png" alt="welcome">
+    <img class="welcome768" src="assets/Welcome-5.png" alt="welcome">
     <div class="welcome-gradient">
     <h2 class="welcome_to">WELCOME <br>TO THE BROOKLYN <br>LIBRARY</h2></div>
 </section>
+
 <section class="about" id="about">
+    <div class="container">
    <h2 class="container_h2"><a href="#">About</a></h2>
    <hr class="hr-line">
+    </div>
    <p class="about_p">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
    <div class="image-wrap">
-       <div class="image-items"><img src="assets/img/image_1.png" alt="image1.png"></div>
-       <div class="image-items"><img src="assets/img/image_2.png" alt="image2.png"></div>
-       <div class="image-items"><img src="assets/img/image_3.png" alt="image3.png"></div>
+       <div class="image-items1"><img src="assets/img/image_1.png" alt="image1.png"></div>
+       <div class="image-items2"><img src="assets/img/image_2.png" alt="image2.png"></div>
+       <div class="image-items3"><img src="assets/img/image_3.png" alt="image3.png"></div>
    </div>
    <div class="carusel_pagination">
        <div class="active_pag"><a href="#"></a></div>
        <div class="active_pag"><a href="#"></a></div>
        <div class="active_pag"><a href="#"></a></div>
+       <div class="active_pag1"><a href="#"></a></div>
+       <div class="active_pag1"><a href="#"></a></div>
    </div>
 </section>
 
@@ -312,8 +329,8 @@ you can get a favorite book and read in coffee shop. Our barista to cook you bes
                     <hr class="menu_line">
                     <p class="menu_dollar">$15</p>
                 </div>
+                <p class="menu_name1">Chocolate Cake</p>
                 <div class="menu_items1">
-                    <p class="menu_name1">Chocolate Cake</p>
                     <hr class="menu_line">
                     <p class="menu_dollar">$18</p>
                 </div>
@@ -417,6 +434,7 @@ you can get a favorite book and read in coffee shop. Our barista to cook you bes
       </div>
 </footer>
 </main>
+</div>
 </body>
 
 </html>

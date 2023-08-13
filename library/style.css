@@ -5,10 +5,9 @@
     width:1440px;
     margin:auto;
 }
-.navigation { 
-    border: 1px solid greenyellow;}
-.header_wrapper {
-    width:1440px;
+
+
+    .header_wrapper {
     display: flex;
     justify-content:end; 
     border: 1px solid rgb(37, 2, 43);
@@ -27,43 +26,98 @@
     line-height: 50px;
     margin-left: 0px;
     margin-top: 20px;
-    margin-right: 340px;
+    margin-right: 250px;
+    display: flex;
+    }
+ .nav_menu{
     }
 .nav-list {
+    display: flex;
     height: 50px;
-   display: flex;
-    align-self: flex-end;
+    align-self: center;
     background-color: black;
     margin-left: 40px;
-
-
 }
 .navig3{
     margin-left: 30px;
 }
-.navig3 a{
+.navig3 {
+    list-style-type:none;
+}
+.navig_a{
     color:white;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0cm;
-    list-style-type:none;
     text-decoration: none;
 }
 .navig3 a:hover{
     font-weight: bold;
 }
-
+.button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .icon_profile {
     background-color: black;
     border: none;
-    margin-right:12px;
-    border:1 p solid white;
-    margin-left: 40px;
+    margin-right:20px;
+    margin-left: 300px;
     }
+    .burger-button{
+       display:none;
+    }
+    .header-burger_btn{
+        display: none;
+    }
+    .header_burger_btn{
+        margin-top:30px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        width: 45px;
+        height: 20px;
+        position: relative;
+    }
+    .burger_line{
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform:translateY(-50%);
+        background-color: #FFF;
+        width: 100%;
+        height: 2px;
+        color:white;
+    }
+
+
+    .header_burger_btn::before{
+        top:0;
+    }
+    .header_burger_btn::after{
+        bottom:0;
+    }
+    .header_burger_btn::before, .header_burger_btn::after{
+        content:"";
+        left: 0;;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color:white;
+
+    }
+
+
 .welcome{
     width:100%;
     position: relative;
+}
+.welcome768{
+    display:none;
 }
 .welcome-gradient{
         width:100%;
@@ -90,10 +144,9 @@
     background-color: black;
 }
 .welcome_to p {
-    margin: 0;
-    position:absolute;
-    top: 50%;
-    transform: translate(0, -10%) }
+    margin-top:40px;
+   position: absolute;
+     }
 .about{
     width: 100%;
     height: 830px;
@@ -115,16 +168,23 @@
     margin-bottom:10px;
      }
 .about{
+    width:100%;
     margin-bottom: -10px;
+}
+.container{
 }
 .about:after{content: _;
              color:black;}
 .hr-line {
                 height: 0;
-                border: none;
+                border:none;
                 border-top: 1px solid #333;
-                margin-bottom: 20px;;
+                margin-bottom: 20px;
+                text-align: center;
             }
+.about{
+    padding: 20px 0 35px;
+      }
 .about_p{
     margin-top:-20px;
     font-family: Inter;
@@ -139,17 +199,15 @@
     color:#BB945F;
 }
 .image-wrap{
-    width:1440px;
     display:flex;
     justify-content:space-between;
-    top:0;
-    margin-left: 0px;
-    margin-right:0px;
-    margin-bottom: 25px;;
+    margin-bottom: 35px;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 35px;
+	overflow: hidden;
 }
-.image-items{
-    margin-left: 20px;
-}
+
 .carusel_pagination {
     margin-top: 0px;
     padding-top: 0px;
@@ -167,6 +225,9 @@
     align-items: center;
     margin-bottom: -5px;
     border:1px solid black;
+}
+.active_pag1{
+    display:none;
 }
 .active_pag a{
     margin: 0 0px;
@@ -292,7 +353,7 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; 
+    line-height: 40px;
     letter-spacing: 2px;
     margin-left: 20px;
     max-height: max-content;
@@ -332,7 +393,6 @@
 }
 .favorites_book_button1:hover {
     background-color:gray;
-    
 }
 .favorites_book_button1{
     width: 75px;
@@ -395,7 +455,6 @@
 }
 #coffeeshop_p{
     text-align: center;
-    
 }
 #coffeeshop a{
     letter-spacing: 0.05em;
@@ -817,8 +876,6 @@ margin-top: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-  
 }
 .footer_rss{
     display: flex;
