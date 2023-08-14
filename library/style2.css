@@ -14,13 +14,13 @@
         position: fixed;
         padding: 0 0px;
         right: 0;
-        top:90px;
-        width: 60%;
-        max-width: 300px;
+        top:85px;
+        width: 70%;
+        max-width: 280px;
         height: 100vh;
         overflow-y: auto;
         z-index: 1000;
-        background-color: black;
+        background-color: #0C0C0E;
         transform:translateX(100%);
         transition: transform 0.6s ease-in-out;
     }
@@ -28,17 +28,19 @@
         transform: none;
     }
     .nav-list{
-        margin: 0;
+        margin-bottom: 0px;
         padding: 0;
         flex-direction: column;
         align-items: center;
     }
     .navig3{
-        top:10px;
-        margin-right: 0;
-        margin-bottom: 0px;
+        top:0px;
+        margin-left: 0px;
+        margin-right: 80px;
+        margin-top: 0px;
+        margin-bottom: 28px;
         width: 100%;
-        background-color:rgb(28, 28, 28);
+        background-color:#0C0C0E;
        text-align: center;
     }
     .navig3 a{
@@ -100,6 +102,14 @@
    .image-items3{
     display: none;
    }
+
+   .favorites_season_books{
+   
+    
+   }
+   .favorites_items{
+     
+    }
 }
 @media (max-width: 768px) {
 .bodycontainer {
@@ -166,5 +176,10 @@
 .active_pag1 a:hover{
     background-color:#BB945F;
 }
+
+.favorites_container{
+   
+    }
+
 }
 
