@@ -24,7 +24,7 @@
     line-height: 50px;
     margin-left: 0px;
     margin-top: 20px;
-    margin-right: 250px;
+    margin-right: 80px;
     display: flex;
     }
  .nav_menu{
@@ -62,7 +62,7 @@
 .icon_profile {
     background-color: black;
     border: none;
-    margin-right:20px;
+    margin-right:30px;
     margin-left: 300px;
     }
     .burger-button{
@@ -73,6 +73,7 @@
     }
     .header_burger_btn{
         display: none;
+        margin-right: 15px;
         margin-top:30px;
         border: none;
         padding: 0;
@@ -103,12 +104,12 @@
     }
     .header_burger_btn::before, .header_burger_btn::after{
         content:"";
-        left: 0;;
+        left: 0;
         position: absolute;
         width: 100%;
         height: 2px;
         background-color:white;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 
     }
     .header_burger_btn--active .burger_line{
@@ -123,9 +124,9 @@
         top:50%;
         transform: rotate(-45deg);
     }
-.stop-scroll{
+/*.stop-scroll{
     overflow: hidden;
-}
+}*/
 .welcome{
     width:100%;
     position: relative;
@@ -252,8 +253,7 @@
 }
 .favorites{
     width:100%;
-    height: 1439px;
-    top:1527px}
+    }
 .pick{margin-top: -20px;
       margin-bottom: 40px;
 
@@ -315,22 +315,22 @@
     height: 1150px;
     color: rgb(0, 0, 0);
     margin: 40px 0px 40px 20px;
-    max-width: 1440px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 260px;
+    column-gap: 18%;
     row-gap: 37px;
 }
 .favorites_container{
      width: 550px;
      height: 555px;
-     border:1px solid black;
      background: #FFF;
-     display: flex;
-     flex-direction: column;
-     margin-right: 55px;
-     margin-bottom: 0px;
 
+     border:1px solid black;
+     flex-direction: column;
+     margin-right: auto;
+     margin-bottom: 0px;
+    
 }
 .favorites_container:nth-last-child(2n+1){
     width: 550px;
@@ -338,7 +338,10 @@
     border: 1px solid #000;
     background: #FFF;
     margin-right: auto;
+    align-self: center;
 }
+
+
 .favorites_staff_pick{
     color: #000;
     font-family: Forum;
@@ -383,7 +386,7 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-left: 20px;
-    max-width: 350px;
+    max-width: 355px;
     }
 
 .book{
@@ -412,6 +415,9 @@
     margin-bottom: auto;
     margin-top: auto;
     cursor: pointer;
+}
+.favorites_book_button1:first-child{
+    margin-top: -20px;
 }
 .favorites_book_button1_own {
     width: 75px;
@@ -445,7 +451,7 @@
     height: 1150px;
     color: rgb(0, 0, 0);
     margin: 40px 0px 40px 20px;
-    max-width: 1440px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 260px;
@@ -455,10 +461,11 @@
 .favorites{
     margin-bottom: 78px;
 }
+
 .Coffeeshop {
     margin-top:60px;
     display: flex;
-    width: 1440px;
+    max-width: 100%;
     height: 841px;
     flex-direction: column;
     align-items: center;
@@ -477,7 +484,7 @@
 }
 .menu {
     display: flex;
-    width: 1400px;
+    width: 100%;
     height: 500px;
     justify-content: space-between;
     margin-left: 0px;
@@ -591,7 +598,7 @@
 .contacts_container {
     border:1 px solid;
     color: rgb(0, 0, 0);
-    max-width: 1440px;
+    max-width: 100%;
 
     display: flex;
     flex-wrap: nowrap;
@@ -622,7 +629,7 @@
     margin-left: 200px;
 }
 .library_card {
-    max-width: 1440px;
+    max-width: 100%;
     height: 614px;
     display: inline;
     margin-bottom: 10px;
@@ -634,14 +641,14 @@
     letter-spacing: 0.05em;
 }
 .digital_cards{
-    max-width: 1440px;
+    max-width: 100%;
     height: 614px;
     display: inline;
     margin-bottom: 20px;
 }
 .digital_cards_form_wrapper{
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 500px;
     justify-content: space-between;
     margin-top: 0px;
@@ -782,7 +789,6 @@ margin-top: -20px;
     text-align: right;
     font-family: Inter;
     font-size: 20px;
-
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.4px;
@@ -849,12 +855,11 @@ margin-top: -20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-   
     text-align: right;
 }
 .footer_cont{
     display: flex;
-    width: 1440px;
+    width: 100%;
     flex-direction: column;
     margin-top: 0px;
     background: #000000;
@@ -862,7 +867,7 @@ margin-top: -20px;
 }
 .footer_cont1{
     display: flex;
-    width: 1400px;
+    width: 97%;
     height: 40px;
     justify-content: space-between;
    
@@ -887,7 +892,7 @@ margin-top: -20px;
 .footer_rss{
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 100%;
     background-color: #000000;
     color: #ffffff;
     padding-top: 30px;
@@ -907,7 +912,7 @@ margin-top: -20px;
 
 }
 .line_footer {
-    max-width: 1400px;
+    max-width: 100%;
     margin-top: 20px;
     color: #ffffff;
     height: 1px;
