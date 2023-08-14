@@ -10,34 +10,35 @@
     .header_wrapper {
         justify-content:space-between;
     }
-
-
     .nav_menu{
         position: fixed;
         padding: 0 0px;
         right: 0;
         top:90px;
         width: 60%;
-        max-width: 200px;
+        max-width: 300px;
+        height: 100vh;
+        overflow-y: auto;
         z-index: 1000;
         background-color: black;
+        transform:translateX(100%);
+        transition: transform 0.6s ease-in-out;
     }
     .nav_menu--visible{
         transform: none;
     }
     .nav-list{
-        margin: 0 ;
+        margin: 0;
         padding: 0;
         flex-direction: column;
         align-items: center;
-     
     }
     .navig3{
         top:10px;
         margin-right: 0;
         margin-bottom: 0px;
         width: 100%;
-        background-color:gray;
+        background-color:rgb(28, 28, 28);
        text-align: center;
     }
     .navig3 a{
@@ -47,10 +48,6 @@
         padding: 0 30px;
         width: 100%;
     }
-
-
-
-
 
 
     .title_Brooklin {
@@ -67,7 +64,6 @@
         margin-left: 30px;
         margin-top:20px;
         }
-
      /*Бургер-меню*/
 
     .header_burger_btn{
@@ -125,101 +121,10 @@
         margin-top:20px;
         }
 
-
       .burger-button{
         display: none;
       }
 
-      /* Бургер
-
-      .nav_menu{           
-        position:absolute;
-        display: block;
-        right:-350px;
-        top:10px;
-        width: 350px;
-        height: 500px;
-        border: 1px solid red;
-        visibility: hidden;
-
-    }
-    .nav-list{
-        position:absolute;
-        border: 3px solid greenyellow;
-        margin-left: 170px;
-        display: block;
-       
-       
-    }
-
-    .navig3:not(:last-child) {
-        list-style-type:none;
-        margin-right: 0;
-       
-    }
-    .navig3:hover{ z-index: 99999;}
-
-    .navig_a{
-        background-color: black;
-        display: block;
-        padding:20px;
-       
-    
-        text-decoration: none;
-    }
-    .header-burger_btn{
-        position: relative;
-    
-        width:45px;
-        width: 45px;
-        background-color: aquamarine;
-        border: none;
-        outline: none;
-    }
-    .header-burger_btn span{
-        display: block;
-        position: absolute;
-        width: 30px;
-        height:3px;
-        left: 5px;
-        background-color:black;
-        transition: background-color .3s, opacity .25s, transform 3s;
-        will-change: transform;
-    }
-    .header-burger_btn span:nth-child(1)
-    {
-        transform: translateY(-10px);
-    }
-    .header-burger_btn span:nth-child(2)
-    {
-    }
-    .header-burger_btn span:nth-child(3){
-        transform: translateY(10px);
-    }
-
-   
-.header.open .header-burger_btn span:nth-child(1)
-{
-    transform: translateY(0) rotate(45deg);
-}
-.header.open .header-burger_btn span:nth-child(2)
-{opacity: 0;
-}
-.header.open .header-burger_btn span:nth-child(3){
-    transform: translateY(0px) rotate(-45deg);
-}
-
-
-.header.open .nav_menu{
-    transform: translateX(-100%);
-    visibility: visible;
-}
-.header-burger_btn span:hover{
-
-}
-   */
-
-   /*  end burger */ 
 .welcome{
 }
 .welcome img{
@@ -249,7 +154,6 @@
     justify-content:center;
     align-items: center;
     margin-bottom: -5px;
-    border:1px solid black;
 }
 .active_pag1 a{
     margin: 0 0px;
