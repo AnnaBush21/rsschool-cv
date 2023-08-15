@@ -104,11 +104,9 @@
    }
 
    .favorites_season_books{
-   
-    
+
    }
    .favorites_items{
-     
     }
 }
 @media (max-width: 768px) {
@@ -177,9 +175,77 @@
     background-color:#BB945F;
 }
 
-.favorites_container{
-   
+.favorites{
+    margin-bottom: 0px;
+}
+.favorites_container h2{
+    margin-top: 30px;
     }
-
+.pick{
+    margin-top: 5px;
+      }
+      .favorites-items{
+        color: rgb(0, 0, 0);
+        margin: 40px 0px 40px 20px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 37px;
+    }
+.favorites_container{
+        width: 550px;
+        height: 555px;
+        background: #FFF;
+        border:1px solid black;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-bottom: 0px;
+   }
+   .favorites_container:nth-last-child(2n+1){
+    width: 550px;
+    height: 555px;
+    border: 1px solid #000;
+    background: #FFF;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 60px;
+}
+ .Coffeeshop {
+        margin-top:0px;
+        display: flex;
+        max-width: 100%;
+        height: 841px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 37px;
+        margin-bottom: 15px;
+        display: block;
+    }
+    .menu_left{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+        display: block;
+    }
+    .menu_right{
+        flex-direction: column;
+       align-items: center;
+       margin-right: 50px;
+     }
+     .contacts{
+        margin-top:700px;
+}
+.contacts_map{
+    margin-top: 35px;
+    margin-left: 20px;
 }
 
+}
