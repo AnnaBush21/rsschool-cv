@@ -140,12 +140,27 @@
     z-index: 2;
     }
 .welcome_to{
-    margin-top: 100px;
+    margin-top: 220px;
+    padding-top: 40px;
     z-index: 3;
+}
+.welcome_to h2{
+    padding-top: 30px;
+}
+.about p{
+    margin-left: 32.7px;
 }
 .about:after{content: _;
     color:black;}
-
+.carret_left,.carret_right{
+    margin-top: 40px;
+}
+.carret_left{
+    margin-right: 60px;
+}
+.carret_right{
+    margin-left: 60px;
+}
 .hr-line {
     margin:0 350;
 }
@@ -231,21 +246,73 @@
     }
     .menu_left{
         flex-direction: column;
-        align-items: center;
         margin-right: 50px;
-        display: block;
+       margin-left: 20px;
     }
     .menu_right{
         flex-direction: column;
-       align-items: center;
-       margin-right: 50px;
+        margin-right: 50px;
+       margin-left: 40px;
      }
+    
+     .coffee_tea {
+        width:431px;
+        height: 500px;
+       justify-self: start;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .desserts_cakes {
+        justify-content: flex-end;
+        display: flex;
+        text-align:left;
+        margin-bottom: 0px;
+    }
+    .menu_line{
+        align-self: center;
+    }
+    .menu_name {
+        width: 190px;
+    }
      .contacts{
         margin-top:700px;
 }
 .contacts_map{
     margin-top: 35px;
     margin-left: 20px;
+}
+.digital_cards_form_wrapper{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    flex-wrap: wrap;
+}
+.find_card_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+}
+.LibraryCard_login{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin: 20px 0 10px 10px;
+    }
+    .you_will_be_text {
+        text-align: center;
+        width: 600px;
+
+}
+    .digital_cards{
+       margin-bottom: 320px;
+}
+.card_form{
+    margin-top:40px;
 }
 
 }
