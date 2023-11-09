@@ -20,4 +20,3 @@
 ## Languages
 + Russian - native speaker
 + English - A1
-+ Ukraine - native speaker
