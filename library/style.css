@@ -5,10 +5,7 @@
     width:1440px;
     margin:auto;
 }
-.navigation { 
-    border: 1px solid greenyellow;}
-.header_wrapper {
-    width:1440px;
+    .header_wrapper {
     display: flex;
     justify-content:end; 
     border: 1px solid rgb(37, 2, 43);
@@ -27,43 +24,115 @@
     line-height: 50px;
     margin-left: 0px;
     margin-top: 20px;
-    margin-right: 340px;
+    margin-right: 80px;
+    display: flex;
+    }
+ .nav_menu{
     }
 .nav-list {
+    display: flex;
     height: 50px;
-   display: flex;
-    align-self: flex-end;
+    align-self: center;
     background-color: black;
     margin-left: 40px;
-
-
 }
 .navig3{
     margin-left: 30px;
 }
-.navig3 a{
+.navig3 {
+    list-style-type:none;
+}
+.navig_a{
     color:white;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0cm;
-    list-style-type:none;
     text-decoration: none;
 }
 .navig3 a:hover{
     font-weight: bold;
 }
-
+.button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .icon_profile {
     background-color: black;
     border: none;
-    margin-right:12px;
-    border:1 p solid white;
-    margin-left: 40px;
+    margin-right:30px;
+    margin-left: 300px;
     }
+    .burger-button{
+       display:none;
+    }
+    .header-burger_btn{
+        display: none;
+    }
+    .header_burger_btn{
+        display: none;
+        margin-right: 15px;
+        margin-top:30px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        width: 45px;
+        height: 20px;
+        position: relative;
+    }
+    .burger_line{
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform:translateY(-50%);
+        background-color: #FFF;
+        width: 100%;
+        height: 2px;
+        color:white;
+        transition:opacity 0.3s ease-in-out;
+    }
+
+
+    .header_burger_btn::before{
+        top:0;
+    }
+    .header_burger_btn::after{
+        bottom:0;
+    }
+    .header_burger_btn::before, .header_burger_btn::after{
+        content:"";
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color:white;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+
+    }
+    .header_burger_btn--active .burger_line{
+        opacity: 0;
+
+    }
+    .header_burger_btn--active::before{
+        top:50%;
+        transform: rotate(45deg);
+    }
+    .header_burger_btn--active::after{
+        top:50%;
+        transform: rotate(-45deg);
+    }
+/*.stop-scroll{
+    overflow: hidden;
+}*/
 .welcome{
     width:100%;
     position: relative;
+}
+.welcome768{
+    display:none;
 }
 .welcome-gradient{
         width:100%;
@@ -90,16 +159,22 @@
     background-color: black;
 }
 .welcome_to p {
-    margin: 0;
-    position:absolute;
-    top: 50%;
-    transform: translate(0, -10%) }
+    margin-top:40px;
+   position: absolute;
+     }
 .about{
     width: 100%;
     height: 830px;
-    top: 680px;
+}
+.container h2{
+    margin-top: -10px;
+}
+#cont_h2{
+    margin-top: 20px;
 }
 .container_h2 a {
+    padding: 0;
+    margin: 0;
     list-style-type:none;
     text-decoration: none;
     font-family: Forum;
@@ -110,23 +185,30 @@
     text-align: center;
 }
 .container_h2{
-    margin-top:15px;
     text-align: center;
     margin-bottom:10px;
      }
+.container_h2 h2{
+margin-top: 0px;
+     }
 .about{
-    margin-bottom: -10px;
+    width:100%;
+    margin-bottom: 0px;
 }
 .about:after{content: _;
              color:black;}
-.hr-line {
+.hr-line {     margin: 20px 680px;
                 height: 0;
-                border: none;
+                border:none;
                 border-top: 1px solid #333;
-                margin-bottom: 20px;;
+                margin-bottom: 20px;
+                text-align: center;
             }
+.about{
+    padding: 0px 0 35px;
+      }
 .about_p{
-    margin-top:-20px;
+    margin-top:5px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -139,16 +221,15 @@
     color:#BB945F;
 }
 .image-wrap{
-    width:1440px;
     display:flex;
     justify-content:space-between;
-    top:0;
-    margin-left: 0px;
-    margin-right:0px;
-    margin-bottom: 25px;;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 20px;
+	overflow: hidden;
 }
-.image-items{
-    margin-left: 20px;
+.carret_left,.carret_right{
+    display: none;
 }
 .carusel_pagination {
     margin-top: 0px;
@@ -157,7 +238,6 @@
     justify-content:center;
     align-items: center;
     margin-bottom: -20px;
-    border:1px solid black;
 }
 .active_pag {
     width: 26px;
@@ -166,7 +246,9 @@
     justify-content:center;
     align-items: center;
     margin-bottom: -5px;
-    border:1px solid black;
+}
+.active_pag1{
+    display:none;
 }
 .active_pag a{
     margin: 0 0px;
@@ -181,8 +263,7 @@
 }
 .favorites{
     width:100%;
-    height: 1439px;
-    top:1527px}
+    }
 .pick{margin-top: -20px;
       margin-bottom: 40px;
 
@@ -219,7 +300,7 @@
     top: 121px;
 }
 .seasons_button_cont {
-    width: 700px;
+    width: 49,4%px;
     height: 24px;
     top: 185px;
     left: 20px;
@@ -241,25 +322,23 @@
     margin-right: 20px;
     }
 .favorites-items{
-    height: 1150px;
     color: rgb(0, 0, 0);
     margin: 40px 0px 40px 20px;
-    max-width: 1440px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 260px;
+    column-gap: 18%;
     row-gap: 37px;
 }
 .favorites_container{
      width: 550px;
      height: 555px;
-     border:1px solid black;
      background: #FFF;
-     display: flex;
+     border:1px solid black;
      flex-direction: column;
-     margin-right: 55px;
+     margin-left: 60px;
+     margin-left: auto;
      margin-bottom: 0px;
-
 }
 .favorites_container:nth-last-child(2n+1){
     width: 550px;
@@ -267,7 +346,10 @@
     border: 1px solid #000;
     background: #FFF;
     margin-right: auto;
+    align-self: center;
 }
+
+
 .favorites_staff_pick{
     color: #000;
     font-family: Forum;
@@ -292,7 +374,7 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; 
+    line-height: 40px;
     letter-spacing: 2px;
     margin-left: 20px;
     max-height: max-content;
@@ -312,7 +394,7 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-left: 20px;
-    max-width: 350px;
+    max-width: 355px;
     }
 
 .book{
@@ -332,7 +414,6 @@
 }
 .favorites_book_button1:hover {
     background-color:gray;
-    
 }
 .favorites_book_button1{
     width: 75px;
@@ -342,6 +423,9 @@
     margin-bottom: auto;
     margin-top: auto;
     cursor: pointer;
+}
+.favorites_book_button1:first-child{
+    margin-top: 0px;
 }
 .favorites_book_button1_own {
     width: 75px;
@@ -375,7 +459,7 @@
     height: 1150px;
     color: rgb(0, 0, 0);
     margin: 40px 0px 40px 20px;
-    max-width: 1440px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 260px;
@@ -385,17 +469,17 @@
 .favorites{
     margin-bottom: 78px;
 }
+
 .Coffeeshop {
     margin-top:60px;
     display: flex;
-    width: 1440px;
+    max-width: 100%;
     height: 841px;
     flex-direction: column;
     align-items: center;
 }
 #coffeeshop_p{
     text-align: center;
-    
 }
 #coffeeshop a{
     letter-spacing: 0.05em;
@@ -408,7 +492,7 @@
 }
 .menu {
     display: flex;
-    width: 1400px;
+    width: 100%;
     height: 500px;
     justify-content: space-between;
     margin-left: 0px;
@@ -425,6 +509,7 @@
     flex-direction: column;
     text-align: justify;
 }
+
 .desserts_cakes {
     justify-content: space-between;
     display: flex;
@@ -438,11 +523,8 @@
       margin-top: 5px;
 }
 .menu_cake{
-    margin-right: 5px;
+    margin-right: -15px;
     text-align: end;
-}
-.menu_container{
-
 }
 .menu_title{
     color: #BB945F;
@@ -466,7 +548,7 @@
     column-gap: 60px;
     margin-top: 6px;
     padding-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 .menu_items1 {
     color: #000;
@@ -475,7 +557,7 @@
     font-style: normal;
     text-transform: capitalize;
     display: flex;
-    column-gap: 80px;
+    column-gap: 50px;
     margin-top: 6px;
     padding-bottom: 10px;
     margin-right: 20px;
@@ -484,8 +566,8 @@
     width: 100px;
     height: 1px;
     background: #BB945F;
-    align-self: center;
-
+    align-self: flex-start;
+    text-align: center;
 }
 
 .menu_name {
@@ -498,7 +580,7 @@
     white-space: nowrap;
     max-width: 196px;
     margin-left:30px;
-    text-align: justify;
+    text-align:start;
 }
 .menu_name1 {
     color: #000;
@@ -508,29 +590,21 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     white-space: nowrap;
-    max-width: 196px;
+    max-width: 120px;
     margin-left:0px;
-    text-align: justify;
+    text-align: end;
 }
 .menu_dollar {
     margin-left: -20px;
 }
-.contacts{
-    margin-top:0px;
-}
-
-.contacts{
-    margin-top:0px;
-}
 .contacts_container {
     border:1 px solid;
     color: rgb(0, 0, 0);
-    max-width: 1440px;
-
+    max-width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    margin-left:0px;
-    margin-top: 0px;
+    flex-wrap: wrap;
+    margin-left:20px;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 .info_text{
@@ -542,21 +616,51 @@
     text-align: left;
     margin-top: -20px;
     }
+.info_text2{
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-top: 40px;
+        }
 .info_number{
-    margin-top: 30px;
+    margin-top: 39px;
+    margin-bottom: 20px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.info_number2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.info_number2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
     text-align: left;
 }
 .contacts_map{
-    margin-top: -15px;
+    margin-top: 15px;
     margin-left: 200px;
 }
 .library_card {
-    max-width: 1440px;
+    max-width: 100%;
     height: 614px;
     display: inline;
     margin-bottom: 10px;
@@ -568,14 +672,13 @@
     letter-spacing: 0.05em;
 }
 .digital_cards{
-    max-width: 1440px;
+    max-width: 100%;
     height: 614px;
-    display: inline;
     margin-bottom: 20px;
 }
 .digital_cards_form_wrapper{
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 500px;
     justify-content: space-between;
     margin-top: 0px;
@@ -595,7 +698,7 @@
 .form_border{
     width: 600px;
     height: 386px;
-
+    margin-left: 20px;
     border: 2px solid  #BB945F;
     display: flex;
     flex-direction: column;
@@ -716,7 +819,6 @@ margin-top: -20px;
     text-align: right;
     font-family: Inter;
     font-size: 20px;
-
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.4px;
@@ -783,12 +885,11 @@ margin-top: -20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-   
     text-align: right;
 }
 .footer_cont{
     display: flex;
-    width: 1440px;
+    width: 100%;
     flex-direction: column;
     margin-top: 0px;
     background: #000000;
@@ -796,10 +897,9 @@ margin-top: -20px;
 }
 .footer_cont1{
     display: flex;
-    width: 1400px;
+    width: 97%;
     height: 40px;
     justify-content: space-between;
-   
    }
 .social{
     display: flex;
@@ -808,7 +908,6 @@ margin-top: -20px;
     justify-content: center;
     align-items: flex-start;
     gap: 15px;
-   
 }
 .social li{
     list-style-type: none;
@@ -817,13 +916,11 @@ margin-top: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-  
 }
 .footer_rss{
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 100%;
     background-color: #000000;
     color: #ffffff;
     padding-top: 30px;
@@ -843,7 +940,7 @@ margin-top: -20px;
 
 }
 .line_footer {
-    max-width: 1400px;
+    max-width: 100%;
     margin-top: 20px;
     color: #ffffff;
     height: 1px;

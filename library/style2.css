@@ -1,0 +1,352 @@
+@media (max-width: 1024px) {
+    .bodycontainer {
+      width:100%;
+    }
+    .body_wrapper{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+    .header_wrapper {
+        justify-content:space-between;
+    }
+    .nav_menu{
+        position: fixed;
+        padding: 0 0px;
+        right: 0;
+        top:85px;
+        width: 70%;
+        max-width: 280px;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 1000;
+        background-color: #0C0C0E;
+        transform:translateX(100%);
+        transition: transform 0.6s ease-in-out;
+    }
+    .nav_menu--visible{
+        transform: none;
+    }
+    .nav-list{
+        margin-bottom: 0px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navig3{
+        top:0px;
+        margin-left: 0px;
+        margin-right: 80px;
+        margin-top: 0px;
+        margin-bottom: 28px;
+        width: 100%;
+        background-color:#0C0C0E;
+       text-align: center;
+    }
+    .navig3 a{
+    }
+
+    .navig_a{
+        padding: 0 30px;
+        width: 100%;
+    }
+
+
+    .title_Brooklin {
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .button-wrapper{
+     justify-content:end ;
+    }
+    .icon-profile{
+        background-color: black;
+        border: none;
+        margin-right:10px;
+        margin-left: 30px;
+        margin-top:20px;
+        }
+     /*Бургер-меню*/
+
+    .header_burger_btn{
+        display: block;
+    } .burger-button{
+        background-color: white;
+        border: none;
+        margin-right:20px;
+        margin-left: 40px;
+        margin-top:20px;
+        border: none;
+    }
+    /*Конец Бургер*/
+.welcome_to{
+    margin-top: 120px;
+}
+.welcome img{
+    width:100%;
+}
+.welcome1440{display: none;}
+.welcome768{
+    display:block;
+}
+.container{
+}
+.about:after{content: _;
+    color:black;}
+.hr-line {
+       margin:0 470;
+   }
+.image-wrap{
+    justify-content: center;
+}
+   .image-items3{
+    display: none;
+   }
+
+   .favorites_season_books{
+
+   }
+   .favorites_items{
+    }
+}
+@media (max-width: 768px) {
+.bodycontainer {
+    width:768px;
+      }
+      .body_wrapper{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+      .button-wrapper{
+        justify-content:end ;
+      }
+      .icon-profile{
+        background-color: black;
+        border: none;
+        margin-right:10px;
+        margin-left: 80px;
+        margin-top:20px;
+        }
+
+      .burger-button{
+        display: none;
+      }
+
+.welcome{
+}
+.welcome img{
+    width:100%;
+    z-index: 2;
+    }
+.welcome_to{
+    margin-top: 220px;
+    padding-top: 40px;
+    z-index: 3;
+}
+.welcome_to h2{
+    padding-top: 30px;
+}
+.about p{
+    margin-left: 32.7px;
+}
+.about:after{content: _;
+    color:black;}
+.carret_left,.carret_right{
+    margin-top: 40px;
+}
+.carret_left{
+    margin-right: 60px;
+}
+.carret_right{
+    margin-left: 60px;
+}
+.hr-line {
+    margin:0 350;
+}
+.image-wrap{
+    justify-content: center;
+}
+.image-items2,.image-items3{
+    display: none;
+   }
+.active_pag1 {
+    width: 26px;
+    height: 26px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: -5px;
+}
+.active_pag1 a{
+    margin: 0 0px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color:black;
+    border-radius: 50%;
+}
+.active_pag1 a:hover{
+    background-color:#BB945F;
+}
+
+.favorites{
+    margin-bottom: 0px;
+}
+.favorites_container h2{
+    margin-top: 30px;
+    }
+.pick{
+    margin-top: 5px;
+      }
+      .favorites-items{
+        color: rgb(0, 0, 0);
+        margin: 40px 0px 40px 20px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 37px;
+    }
+    #favorites h2{
+        margin-top:35px;
+    }
+.favorites_container{
+        width: 550px;
+        height: 555px;
+        background: #FFF;
+        border:1px solid black;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-bottom: 0px;
+   }
+   .favorites_container:nth-last-child(2n+1){
+    width: 550px;
+    height: 555px;
+    border: 1px solid #000;
+    background: #FFF;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 60px;
+}
+ .Coffeeshop {
+        margin-top:10px;
+        display: flex;
+        max-width: 100%;
+        height: 841px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 37px;
+        margin-bottom: 15px;
+        display: block;
+    }
+    .menu_left{
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+    .menu_right{
+        flex-direction: column;
+        margin-right: 50px;
+       margin-left: 40px;
+     }
+     .menu_container1{
+        width: 420px;
+        margin-right: -50px;
+     }
+     .menu_cake {
+        margin-right: -20px;
+     }
+     .menu_title{
+        margin-top: 8px;
+     }
+     .menu_items {
+        margin-right: -15px;
+    }
+
+     .coffee_tea {
+        width:431px;
+        height: 500px;
+       justify-self: start;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .desserts_cakes {
+        justify-content: flex-end;
+        display: flex;
+        text-align:left;
+        margin-bottom: 0px;
+    }
+    .menu_line{
+        align-self: center;
+    }
+    .menu_name {
+        width: 190px;
+        margin-left: 10px;
+    }
+     .contacts{
+        margin-top:655px;
+     }
+    .contacts a{
+        letter-spacing: 0.03em;
+    }
+
+.contacts_map{
+    margin-top: 85px;
+    margin-left: 20px;
+}
+.digital_cards_form_wrapper{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    flex-wrap: wrap;
+}
+.find_card_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+}
+.find_title{
+    margin-right: -60px;
+}
+.form_border{
+    margin-left: 65px;
+}
+.LibraryCard_login{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin: -30px 0 10px 90px;
+    }
+    .you_will_be_text {
+        text-align: center;
+        width: 600px;
+        margin-bottom: 40px;
+        margin-top: 5px;
+
+}
+    .digital_cards{
+       margin-bottom: 230px;
+}
+.card_form{
+    margin-top:40px;
+}
+.social{
+    margin-top: 40px;
+}
+.footer_cont2 p{
+    margin-top:25px;
+}
+}
